@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================
+         META TAGS E SEO
+    ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Renda Extra | Crie Sua Nova Fonte de Renda em 2026</title>
+    
+    <meta name="description" content="Descubra como criar uma nova fonte de renda mesmo começando do zero. Estratégias práticas para gerar renda extra usando apenas seu celular.">
+    <meta name="keywords" content="renda extra, marketing digital, ganhar dinheiro online, e-book, liberdade financeira, afiliados, IA">
+    <meta name="author" content="Renda Extra">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Renda Extra - Crie uma Nova Fonte de Renda">
+    <meta property="og:description" content="Estratégias simples e práticas para gerar renda extra usando apenas seu celular.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="ebook-renda-extra.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><style>
+        /* ============================================
+           VARIÁVEIS CSS (Paleta de Cores Premium)
+        ============================================ */
+        :root {
+            --preto: #0D0D0D;
+            --preto-claro: #1a1a1a;
+            --preto-card: #141414;
+            --dourado: #D4AF37;
+            --dourado-claro: #F4D03F;
+            --dourado-escuro: #B8941F;
+            --branco: #FFFFFF;
+            --cinza: #cccccc;
+            --verde: #2E6B3F;
+            --vermelho: #ff4444;
+            
+            --glass-bg: rgba(212, 175, 55, 0.05);
+            --glass-border: rgba(212, 175, 55, 0.2);
+            --glass-blur: blur(20px);
+            
+            --sombra-suave: 0 10px 30px rgba(212, 175, 55, 0.15);
+            --sombra-forte: 0 20px 60px rgba(212, 175, 55, 0.35);
+            --sombra-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+            
+            --transicao: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --radius: 20px;
+        }
+
+        /* ============================================
+           RESET GLOBAL
+        ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--preto);
+            color: var(--branco);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================================
+           ANIMAÇÕES KEYFRAMES
+        ============================================ */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(-3deg); }
+            50% { transform: translateY(-20px) rotate(-3deg); }
+        }
+
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            50% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6)); }
+            50% { filter: drop-shadow(0 0 40px rgba(212, 175, 55, 1)); }
+        }
+
+        @keyframes rotate-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* ============================================
+           CLASSE SCROLL REVEAL
+        ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }/* ============================================
+           TIPOGRAFIA
+        ============================================ */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-claro) 50%, var(--dourado) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-claro) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+            margin: 20px auto 0;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--branco);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--cinza);
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        /* ============================================
+           BOTÕES PREMIUM
+        ============================================ */
+        .btn {
+            display: inline-block;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-escuro) 100%);
+            color: var(--preto);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transicao);
+            box-shadow: var(--sombra-forte);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+            transition: left 0.6s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-large {
+            padding: 25px 60px;
+            font-size: 1.3rem;
+            animation: pulse-gold 2s infinite;
+        }
+
+        /* ============================================
+           SEÇÃO HERO
+        ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(46, 107, 63, 0.15) 0%, transparent 40%);
+            animation: rotate-slow 60s linear infinite;
+            z-index: 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.3rem;
+            color: var(--cinza);
+            margin-bottom: 30px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            color: var(--dourado);
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .badge i {
+            color: var(--verde);
+        }
+
+        .hero-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .ebook-image {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 25px;
+            box-shadow: var(--sombra-forte);
+            animation: float 6s ease-in-out infinite, glow 3s ease-in-out infinite;
+            transition: var(--transicao);
+        }
+
+        .ebook-image:hover {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        .price-box {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 25px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: var(--sombra-card);
+        }
+
+        .price-original {
+            font-size: 1.5rem;
+            color: #888;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+        }
+
+        .price-label {
+            font-size: 1.1rem;
+            color: var(--cinza);
+            margin-bottom: 10px;
+        }
+
+        .price-current {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--dourado);
+            margin: 10px 0;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .price-current small {
+            font-size: 1.5rem;
+            vertical-align: super;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .countdown-item {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 15px 20px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .countdown-value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--dourado);
+            display: block;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-label {
+            font-size: 0.8rem;
+            color: var(--cinza);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }/* ============================================
+           SEÇÃO BENEFÍCIOS
+        ============================================ */
+        .benefits {
+            background: linear-gradient(180deg, var(--preto) 0%, var(--preto-claro) 100%);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transicao);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .benefit-card:hover::before {
+            left: 100%;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--dourado);
+            box-shadow: var(--sombra-forte);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-escuro) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--preto);
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao);
+        }
+
+        .benefit-card:hover .benefit-icon {
+            transform: rotateY(360deg);
+        }
+
+        .benefit-card h3 {
+            color: var(--dourado);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .benefit-card p {
+            font-size: 1rem;
+            color: var(--cinza);
+        }
+
+        /* ============================================
+           SEÇÃO O QUE VOCÊ VAI APRENDER
+        ============================================ */
+        .learning {
+            background: var(--preto);
+            position: relative;
+        }
+
+        .learning::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .learning-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .learning-list li {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 22px 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: var(--transicao);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .learning-list li:hover {
+            background: rgba(212, 175, 55, 0.15);
+            border-color: var(--dourado);
+            transform: translateX(15px);
+            box-shadow: var(--sombra-suave);
+        }
+
+        .check-icon {
+            color: var(--dourado);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            background: rgba(212, 175, 55, 0.15);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }/* ============================================
+           SEÇÃO COMPARAÇÃO
+        ============================================ */
+        .comparison {
+            background: linear-gradient(180deg, var(--preto-claro) 0%, var(--preto) 100%);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .comparison-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-radius: var(--radius);
+            padding: 40px;
+            border: 2px solid;
+            transition: var(--transicao);
+        }
+
+        .comparison-card.without {
+            border-color: rgba(255, 68, 68, 0.3);
+        }
+
+        .comparison-card.with {
+            border-color: var(--verde);
+            background: rgba(46, 107, 63, 0.08);
+            box-shadow: 0 0 40px rgba(46, 107, 63, 0.2);
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-card h3 {
+            margin-bottom: 30px;
+            font-size: 1.6rem;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .comparison-card.without h3 {
+            color: var(--vermelho);
+        }
+
+        .comparison-card.with h3 {
+            color: var(--verde);
+        }
+
+        .comparison-list {
+            list-style: none;
+        }
+
+        .comparison-list li {
+            padding: 15px 0;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ============================================
+           SEÇÃO DEPOIMENTOS
+        ============================================ */
+        .testimonials {
+            background: var(--preto);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 35px;
+            transition: var(--transicao);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--sombra-forte);
+            border-color: var(--dourado);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 5rem;
+            color: var(--dourado);
+            opacity: 0.2;
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-avatar {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-escuro) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--preto);
+            border: 3px solid var(--dourado);
+            box-shadow: var(--sombra-suave);
+        }
+
+        .testimonial-info h4 {
+            color: var(--dourado);
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .stars {
+            color: var(--dourado);
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--cinza);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        /* ============================================
+           SEÇÃO GARANTIA
+        ============================================ */
+        .guarantee {
+            background: linear-gradient(180deg, var(--preto) 0%, var(--preto-claro) 100%);
+        }
+
+        .guarantee-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(46, 107, 63, 0.08) 100%);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 2px solid var(--dourado);
+            border-radius: 30px;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--sombra-forte);
+        }
+
+        .guarantee-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            animation: rotate-slow 30s linear infinite;
+        }
+
+        .guarantee-seal {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-escuro) 100%);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--preto);
+            font-weight: 800;
+            box-shadow: var(--sombra-forte);
+            position: relative;
+            z-index: 1;
+            animation: pulse-gold 3s infinite;
+        }
+
+        .guarantee-seal .days {
+            font-size: 3rem;
+            line-height: 1;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .guarantee-seal .text {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .guarantee-box h3 {
+            color: var(--dourado);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .guarantee-box p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }/* ============================================
+           SEÇÃO OFERTA
+        ============================================ */
+        .offer {
+            background: linear-gradient(180deg, var(--preto-claro) 0%, var(--preto) 100%);
+            position: relative;
+        }
+
+        .offer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(46, 107, 63, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .offer-box {
+            max-width: 700px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.03) 100%);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 2px solid var(--dourado);
+            border-radius: 30px;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            box-shadow: var(--sombra-forte);
+        }
+
+        .offer-box h2 {
+            margin-bottom: 30px;
+        }
+
+        .offer-price {
+            margin: 30px 0;
+        }
+
+        .offer-price .original {
+            font-size: 1.8rem;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .offer-price .label {
+            font-size: 1.3rem;
+            color: var(--cinza);
+            margin: 10px 0;
+        }
+
+        .offer-price .current {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--dourado);
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+            line-height: 1;
+        }
+
+        .offer-price .current small {
+            font-size: 2rem;
+            vertical-align: super;
+        }
+
+        .offer-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+            list-style: none;
+        }
+
+        .offer-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 12px;
+            font-size: 1rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .offer-features li i {
+            color: var(--dourado);
+            font-size: 1.3rem;
+        }
+
+        /* ============================================
+           SEÇÃO FAQ
+        ============================================ */
+        .faq {
+            background: var(--preto);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: var(--transicao);
+        }
+
+        .faq-item:hover {
+            border-color: var(--dourado);
+        }
+
+        .faq-item.active {
+            border-color: var(--dourado);
+            box-shadow: var(--sombra-suave);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--branco);
+            transition: var(--transicao);
+        }
+
+        .faq-question:hover {
+            color: var(--dourado);
+        }
+
+        .faq-question i {
+            color: var(--dourado);
+            transition: transform 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 30px;
+            color: var(--cinza);
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 30px 25px;
+        }
+
+        /* ============================================
+           RODAPÉ
+        ============================================ */
+        footer {
+            background: var(--preto-claro);
+            padding: 60px 20px 30px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--dourado);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--cinza);
+            text-decoration: none;
+            transition: var(--transicao);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--dourado);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dourado);
+            font-size: 1.2rem;
+            transition: var(--transicao);
+        }
+
+        .footer-social a:hover {
+            background: var(--dourado);
+            color: var(--preto);
+            transform: translateY(-5px);
+        }
+
+        .footer-copy {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }/* ============================================
+           RESPONSIVIDADE
+        ============================================ */
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .hero-text {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .offer-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 70px 0;
+            }
+
+            .countdown {
+                gap: 10px;
+            }
+
+            .countdown-item {
+                min-width: 65px;
+                padding: 12px 15px;
+            }
+
+            .countdown-value {
+                font-size: 1.8rem;
+            }
+
+            .price-current {
+                font-size: 2.8rem;
+            }
+
+            .offer-price .current {
+                font-size: 3.5rem;
+            }
+
+            .btn-large {
+                padding: 20px 40px;
+                font-size: 1.1rem;
+            }
+
+            .guarantee-box {
+                padding: 40px 25px;
+            }
+
+            .offer-box {
+                padding: 40px 25px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown-item {
+                min-width: 55px;
+                padding: 10px;
+            }
+
+            .countdown-value {
+                font-size: 1.5rem;
+            }
+
+            .countdown-label {
+                font-size: 0.7rem;
+            }
+
+            .benefit-card {
+                padding: 30px 20px;
+            }
+
+            .comparison-card {
+                padding: 30px 20px;
+            }
+
+            .testimonial-card {
+                padding: 25px 20px;
+            }
+        }
+
+        /* ============================================
+           SCROLLBAR PERSONALIZADA
+        ============================================ */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--preto);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--dourado);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--dourado-escuro);
+        }
+
+        /* ============================================
+           SELEÇÃO DE TEXTO
+        ============================================ */
+        ::selection {
+            background: var(--dourado);
+            color: var(--preto);
+        }
+    </style>
+</head><body>
+    <!-- ============================================
+         SEÇÃO 1 — HERO
+    ============================================ -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <i class="fas fa-users"></i>
+                    Mais de 1.000 pessoas já começaram
+                </div>
+                <h1>Descubra Como Criar uma Nova Fonte de Renda Mesmo Começando do Zero</h1>
+                <p class="subtitle">
+                    Aprenda estratégias simples, práticas e atualizadas para gerar renda extra utilizando apenas seu celular e conexão com a internet.
+                </p>
+                
+                <div class="price-box">
+                    <div class="price-original">De R$ 97,00</div>
+                    <div class="price-label">Por apenas</div>
+                    <div class="price-current"><small>R$</small> 19,90</div>
+                    
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">00</span>
+                            <span class="countdown-label">Min</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">00</span>
+                            <span class="countdown-label">Seg</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#oferta" class="btn btn-large">
+                        <i class="fas fa-bolt"></i> QUERO MEU E-BOOK AGORA
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="ebook-renda-extra.png" alt="E-book Renda Extra - Capa Premium" class="ebook-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 2 — BENEFÍCIOS
+    ============================================ -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <h2 class="reveal">Por que milhares estão escolhendo este método?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Ganhe dinheiro pela internet</h3>
+                    <p>Trabalhe de forma digital e receba diretamente na sua conta.</p>
+                </div>
+                
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Métodos simples para iniciantes</h3>
+                    <p>Passo a passo claro, mesmo sem experiência prévia.</p>
+                </div>
+                
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Baixo investimento</h3>
+                    <p>Comece com pouco dinheiro e escale seus resultados.</p>
+                </div>
+                
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Trabalhe de qualquer lugar</h3>
+                    <p>Liberdade geográfica total. Só precisa de internet.</p>
+                </div>
+                
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Utilize apenas seu celular</h3>
+                    <p>Não precisa de computador. Seu smartphone é suficiente.</p>
+                </div>
+                
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Estratégias atualizadas para 2026</h3>
+                    <p>Conteúdo fresco com as tendências mais atuais do mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 3 — O QUE VOCÊ VAI APRENDER
+    ============================================ -->
+    <section class="learning" id="aprender">
+        <div class="container">
+            <h2 class="reveal">O que você vai aprender</h2>
+            
+            <ul class="learning-list">
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Marketing Digital do zero ao avançado
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Como vender produtos digitais com lucro
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Marketing de Afiliados — comissões altas
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Inteligência Artificial a seu favor
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Estratégias para Redes Sociais
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Técnicas de vendas que convertem
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Como conseguir clientes todos os dias
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Ferramentas 100% gratuitas
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Organização financeira pessoal
+                </li>
+                <li class="reveal">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    Como criar renda recorrente
+                </li>
+            </ul>
+        </div>
+    </section><!-- ============================================
+         SEÇÃO 4 — POR QUE ESTE E-BOOK?
+    ============================================ -->
+    <section class="comparison" id="comparacao">
+        <div class="container">
+            <h2 class="reveal">A diferença é clara</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card without reveal-left">
+                    <h3><i class="fas fa-times-circle"></i> Sem o e-book</h3>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-times" style="color: var(--vermelho);"></i> Não sabe por onde começar</li>
+                        <li><i class="fas fa-times" style="color: var(--vermelho);"></i> Perde tempo com métodos errados</li>
+                        <li><i class="fas fa-times" style="color: var(--vermelho);"></i> Continua sem renda extra</li>
+                        <li><i class="fas fa-times" style="color: var(--vermelho);"></i> Falta de estratégia clara</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card with reveal-right">
+                    <h3><i class="fas fa-check-circle"></i> Com o e-book</h3>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-check" style="color: var(--verde);"></i> Plano passo a passo completo</li>
+                        <li><i class="fas fa-check" style="color: var(--verde);"></i> Métodos testados e aprovados</li>
+                        <li><i class="fas fa-check" style="color: var(--verde);"></i> Organização e foco nos resultados</li>
+                        <li><i class="fas fa-check" style="color: var(--verde);"></i> Possibilidade real de renda extra</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 5 — DEPOIMENTOS
+    ============================================ -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <h2 class="reveal">O que nossos leitores estão dizendo</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MC</div>
+                        <div class="testimonial-info">
+                            <h4>Maria Clara</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Em menos de 30 dias já tinha feito minha primeira venda. O conteúdo é direto ao ponto e muito prático!"</p>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RS</div>
+                        <div class="testimonial-info">
+                            <h4>Rafael Souza</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Melhor investimento que já fiz. Consegui uma renda extra que paga todas as minhas contas mensais."</p>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AL</div>
+                        <div class="testimonial-info">
+                            <h4>Ana Luíza</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Comecei do zero, sem saber nada de marketing. Hoje tenho uma fonte de renda que me dá liberdade."</p>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">PF</div>
+                        <div class="testimonial-info">
+                            <h4>Pedro Felipe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"As estratégias de IA são incríveis. Automatizei quase tudo e ganho dinheiro enquanto durmo."</p>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JM</div>
+                        <div class="testimonial-info">
+                            <h4>Juliana Mendes</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Conteúdo atualizado e muito fácil de aplicar. Recomendo para qualquer pessoa que queira começar."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 6 — GARANTIA
+    ============================================ -->
+    <section class="guarantee" id="garantia">
+        <div class="container">
+            <div class="guarantee-box reveal">
+                <div class="guarantee-seal">
+                    <span class="days">7</span>
+                    <span class="text">Dias</span>
+                </div>
+                <h3>Garantia Incondicional de 7 Dias</h3>
+                <p>
+                    Você possui <strong style="color: var(--dourado);">Garantia de 7 Dias</strong>. Caso não fique satisfeito com o conteúdo, poderá solicitar o reembolso integral dentro do prazo, sem burocracia e sem perguntas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 7 — OFERTA
+    ============================================ -->
+    <section class="offer" id="oferta">
+        <div class="container">
+            <div class="offer-box reveal">
+                <h2>Oferta Especial por Tempo Limitado</h2>
+                
+                <div class="offer-price">
+                    <div class="original">De R$ 97,00</div>
+                    <div class="label">Por apenas</div>
+                    <div class="current"><small>R$</small> 19,90</div>
+                </div>
+                
+                <a href="#" class="btn btn-large">
+                    <i class="fas fa-shopping-cart"></i> QUERO GARANTIR MEU E-BOOK
+                </a>
+                
+                <ul class="offer-features">
+                    <li><i class="fas fa-lock"></i> Compra 100% Segura</li>
+                    <li><i class="fas fa-bolt"></i> Acesso Imediato</li>
+                    <li><i class="fas fa-mobile-alt"></i> Funciona no Celular</li>
+                    <li><i class="fas fa-credit-card"></i> Diversas formas de pagamento</li>
+                </ul>
+                
+                <p style="font-size: 0.95rem; color: var(--cinza); margin-top: 20px;">
+                    <i class="fas fa-shield-alt" style="color: var(--dourado);"></i> 
+                    Pagamento processado com criptografia SSL
+                </p>
+            </div>
+        </div>
+    </section><!-- ============================================
+         SEÇÃO 8 — FAQ
+    ============================================ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="reveal">Perguntas Frequentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Funciona para iniciantes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O e-book foi desenvolvido especialmente para quem está começando do zero. Os métodos são explicados de forma simples e passo a passo, sem necessidade de experiência prévia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Preciso aparecer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! Você pode aplicar todas as estratégias sem precisar aparecer. Existem métodos específicos para quem prefere manter o anonimato.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Recebo imediatamente?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Assim que o pagamento for confirmado, você receberá o acesso imediato ao e-book no seu e-mail. Pagamentos via PIX e cartão são instantâneos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Posso acessar pelo celular?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Com certeza! O e-book é 100% compatível com dispositivos móveis. Você pode ler e aplicar as estratégias diretamente pelo seu celular.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Como recebo o e-book?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Após a confirmação do pagamento, você receberá um e-mail com o link de acesso e download do e-book em formato PDF, pronto para leitura em qualquer dispositivo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Existe garantia?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Você tem 7 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, basta solicitar o reembolso e devolveremos 100% do seu dinheiro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 9 — RODAPÉ
+    ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">RENDA EXTRA</div>
+            
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Contato</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="footer-copy">
+                Copyright © 2026 Renda Extra. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+    ============================================ -->
+    <script>
+        // ============================================
+        // CONTADOR REGRESSIVO (24 horas)
+        // ============================================
+        function iniciarContador() {
+            // Define o tempo: 24 horas a partir de agora
+            const agora = new Date();
+            const fim = new Date(agora.getTime() + 24 * 60 * 60 * 1000);
+            
+            // Salva no localStorage para persistir entre recarregamentos
+            if (!localStorage.getItem('fimOferta')) {
+                localStorage.setItem('fimOferta', fim.getTime());
+            }
+            
+            const tempoFim = parseInt(localStorage.getItem('fimOferta'));
+            
+            function atualizar() {
+                const agora = new Date().getTime();
+                const distancia = tempoFim - agora;
+                
+                if (distancia <= 0) {
+                    // Reinicia o contador
+                    localStorage.removeItem('fimOferta');
+                    iniciarContador();
+                    return;
+                }
+                
+                const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').textContent = String(horas).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutos).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(segundos).padStart(2, '0');
+            }
+            
+            atualizar();
+            setInterval(atualizar, 1000);
+        }
+        
+        iniciarContador();
+
+        // ============================================
+        // SCROLL REVEAL (Animação ao rolar)
+        // ============================================
+        function scrollReveal() {
+            const elementos = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+            
+            elementos.forEach(el => {
+                const posicao = el.getBoundingClientRect().top;
+                const alturaTela = window.innerHeight;
+                
+                if (posicao < alturaTela - 100) {
+                    el.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', scrollReveal);
+        window.addEventListener('load', scrollReveal);
+
+        // ============================================
+        // FAQ ACCORDION
+        // ============================================
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const pergunta = item.querySelector('.faq-question');
+            
+            pergunta.addEventListener('click', () => {
+                const ativo = document.querySelector('.faq-item.active');
+                
+                if (ativo && ativo !== item) {
+                    ativo.classList.remove('active');
+                }
+                
+                item.classList.toggle('active');
+            });
+        });
+
+        // ============================================
+        // SMOOTH SCROLL PARA LINKS INTERNOS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ============================================
+        // ANIMAÇÃO DE NÚMEROS (opcional)
+        // ============================================
+        console.log(' Landing Page Renda Extra carregada com sucesso!');
+    </script>
+</body>
+</html>
